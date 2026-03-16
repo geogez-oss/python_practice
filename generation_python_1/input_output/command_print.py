@@ -26,8 +26,3 @@ print(f'{x} + {y} = {x + y}')
 print(f'{x} - {y} = {x - y}')
 print(f'{x} * {y} = {x * y}')
 
-a, d, n = int(input()), int(input()), int(input())
-print(a + d * (n - 1))
-
-x = int(input())
-print(x, x * 2, x * 3, x * 4, x * 5, sep='---')

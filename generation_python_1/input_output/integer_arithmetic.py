@@ -25,3 +25,9 @@ print(f'Для числа {n} предыдущее число: {n - 1}')
 a = int(input())
 print(f'Объем = {a ** 3}')
 print(f'Площадь полной поверхности = {6 * a ** 2}')
+
+a, d, n = int(input()), int(input()), int(input())
+print(a + d * (n - 1))
+
+x = int(input())
+print(x, x * 2, x * 3, x * 4, x * 5, sep='---')
