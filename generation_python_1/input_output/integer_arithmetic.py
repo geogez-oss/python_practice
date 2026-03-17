@@ -45,3 +45,49 @@ k = int(input())
 x = k // n
 y = k % n
 print(x, y, sep='\n')
+
+n = int(input())
+print((n + 1) // 2)
+
+m = int(input())
+print(f'{m} мин - это {m // 60} час {m % 60} минут')
+
+n = int(input())
+x = (n + 3) // 4
+print(x)
+
+n = int(input())
+x1 = n % 10
+x2= n // 10 % 10
+x3= n // 100 % 10
+print(f'Сумма цифр = {sum([x1, x2, x3])}')
+print(f'Произведение цифр = {x1 * x2 * x3}')
+
+n = int(input())
+x1 = str(n % 10)
+x2 = str(n // 10 % 10)
+x3 = str(n // 100 % 10)
+print(x3, x2, x1, sep='')  # ← вот это не хватало
+print(x3, x1, x2, sep='')
+print(x2, x3, x1, sep='')
+print(x2, x1, x3, sep='')
+print(x1, x3, x2, sep='')
+print(x1, x2, x3, sep='')
+
+n = int(input())
+x1 = n // 1000 % 10
+x2 = n // 100 % 10
+x3 = n // 10 % 10
+x4 = n % 10
+print(f'Цифра в позиции тысяч равна {x1}')
+print(f'Цифра в позиции сотен равна {x2}')
+print(f'Цифра в позиции десятков равна {x3}')
+print(f'Цифра в позиции единиц равна {x4}')n = int(input())
+x1 = n // 1000 % 10
+x2 = n // 100 % 10
+x3 = n // 10 % 10
+x4 = n % 10
+print(f'Цифра в позиции тысяч равна {x1}')
+print(f'Цифра в позиции сотен равна {x2}')
+print(f'Цифра в позиции десятков равна {x3}')
+print(f'Цифра в позиции единиц равна {x4}')
