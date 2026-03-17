@@ -45,3 +45,4 @@ if x1 + x4 == x2 - x3:
     print('ДА')
 else:
     print('НЕТ')
+
