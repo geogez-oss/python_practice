@@ -36,3 +36,12 @@ b = int(input())
 q = int(input())
 n = int(input())
 print(b * q ** (n - 1))
+
+sm = int(input())
+print(sm // 100)
+
+n = int(input())
+k = int(input())
+x = k // n
+y = k % n
+print(x, y, sep='\n')
