@@ -46,3 +46,38 @@ if x1 + x4 == x2 - x3:
 else:
     print('НЕТ')
 
+a = int(input())
+b = int(input())
+c = int(input())
+count = 0
+if a > 0:
+    count += a
+if b > 0:
+    count += b
+if c > 0:
+    count += c
+print(count)
+
+age = int(input())
+if age <= 13:
+    print('детство')
+if 14 <= age <= 24:
+    print('молодость')
+if 25 <= age <= 59:
+    print('зрелость')
+if age >= 60:
+    print('старость')
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+min_value = a
+if b < a:
+    min_value = b
+if c < b:
+    min_value = c
+if d < c:
+    min_value = d
+print(min_value)
