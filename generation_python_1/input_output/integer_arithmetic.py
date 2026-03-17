@@ -31,3 +31,8 @@ print(a + d * (n - 1))
 
 x = int(input())
 print(x, x * 2, x * 3, x * 4, x * 5, sep='---')
+
+b = int(input())
+q = int(input())
+n = int(input())
+print(b * q ** (n - 1))
