@@ -54,3 +54,36 @@ if (x1 == x2 or x1 == x2 + 1 or x1 == x2 - 1) and (y1 == y2 or y1 == y2 + 1 or y
     print('YES')
 else:
     print('NO')
+
+n = int(input())
+k = int(input())
+if n > k:
+    print('NO')
+elif n < k:
+    print('YES')
+else:
+    print("Don't know")
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a == b == c:
+    print('Равносторонний')
+elif a == b or b == c or a == c:
+    print('Равнобедренный')
+else:
+    print('Разносторонний')
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+if b <= a <= c or c <= a <= b:
+    median = a
+elif a <= b <= c or c <= b <= a:
+    median = b
+else:
+    median = c
+
+print(median)
