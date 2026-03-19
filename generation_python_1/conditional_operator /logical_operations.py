@@ -87,3 +87,37 @@ else:
     median = c
 
 print(median)
+
+mounth = int(input())
+if mounth in [1, 3, 5, 7, 8, 10, 12]:
+    print(31)
+elif mounth in [4, 6, 9, 11]:
+    print(30)
+else:
+    print(28)
+
+weight = int(input())
+if weight < 60:
+    print('Легкий вес')
+elif 60 <= weight < 64:
+    print('Первый полусредний вес')
+elif 64 <= weight < 69:
+    print('Полусредний вес')
+
+a = int(input())
+b = int(input())
+op = input()
+
+if op == '+':
+    print(a + b)
+elif op == '-':
+    print(a - b)
+elif op == '*':
+    print(a * b)
+elif op == '/':
+    if b == 0:
+        print("На ноль делить нельзя!")
+    else:
+        print(a / b)
+else:
+    print("Неверная операция")
