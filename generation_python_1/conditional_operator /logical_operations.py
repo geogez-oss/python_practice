@@ -121,3 +121,82 @@ elif op == '/':
         print(a / b)
 else:
     print("Неверная операция")
+
+color1 = input().lower()
+color2 = input().lower()
+
+colors = {color1, color2}
+main_colors = {"красный", "синий", "желтый"}
+
+# Проверяем, что оба цвета основные
+if not colors.issubset(main_colors):
+    print("ошибка цвета")
+elif color1 == color2:
+    print(color1)  # Если смешать одинаковые, цвет не изменится
+elif "красный" in colors and "синий" in colors:
+    print("фиолетовый")
+elif "красный" in colors and "желтый" in colors:
+    print("оранжевый")
+elif "синий" in colors and "желтый" in colors:
+    print("зеленый")
+
+n = int(input())
+
+if n < 0 or n > 36:
+    print("ошибка ввода")
+elif n == 0:
+    print("зеленый")
+elif 1 <= n <= 10 or 19 <= n <= 28:
+    if n % 2 != 0:
+        print("красный")
+    else:
+        print("черный")
+elif 11 <= n <= 18 or 29 <= n <= 36:
+    if n % 2 != 0:
+        print("черный")
+    else:
+        print("красный")
+
+a1 = int(input())
+b1 = int(input())
+a2 = int(input())
+b2 = int(input())
+
+if a1 < b1 < a2 < b2 or a2 < b2 < a1 < b1:
+    print('пустое множество')
+
+elif a2 < a1 < b1 < b2:
+    print(a1, b1)
+
+elif a2 < a1 < b2 < b1:
+    print(a1, b2)
+
+elif a1 < a2 < b1 < b2:
+    print(a2, b1)
+
+elif a1 < a2 < b2 < b1:
+    print(a2, b2)
+
+elif b2 == a1:
+    print(a1)
+
+elif b1 == a2:
+    print(a2)
+
+elif a1 == a2 and b1 == b2:
+    print(a1, b1)
+
+elif a2 < a1 and b1 == b2:
+    print(a1, b1)
+
+elif a1 < a2 and b1 == b2:
+    print(a2, b2)
+
+elif a1 == a2 and b1 < b2:
+    print(a1, b1)
+
+elif a1 == a2 and b2 < b1:
+    print(a2, b2)
+
+else:
+    print('пустое множество')
